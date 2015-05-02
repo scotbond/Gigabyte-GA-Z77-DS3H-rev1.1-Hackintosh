@@ -42,7 +42,18 @@ Beside defaults, check/uncheck:
 - Drivers > Disk > TRIM Enabler (if you own a SSD disk)
 - ~~Drivers > Misc > USB 3.0 - Universal ([does not work](https://github.com/tkrotoff/Gigabyte-GA-Z77-DS3H-rev1.1-Hackintosh/issues/8) for me - at least not all ports)~~
 - Drivers > Network > Atheros > AtherosL1cEthernet 1.2.3
+- Customize > System Definitions > Mac mini 6,2
+- Customize > Boot Options > DropSSDT=Yes
+- ~~Customize > Boot Options > Generate CPU States~~
 - Customize > Boot Options > Verbose Boot (if you want to see what's going on)
+
+## SSDT
+In order to achieve proper power management, you should generate SSDT.
+Perform this after system has rebooted (after MultiBeast).
+- Download [SSDT Generator](https://github.com/Piker-Alpha/ssdtPRGen.sh/archive/master.zip)
+- Run ./ssdtPRGen.sh (answer y, then n)
+- Rename /Extra/ssdt.aml to /Extra/SSDT.aml
+- Reboot
 
 Sources:
 - [Success: Mountain Lion Gigabyte GA-Z77-DS3H, i5 3570k Ivy Bridge, 16GB](http://www.tonymacx86.com/user-builds/75407-success-mountain-lion-gigabyte-ga-z77-ds3h-i5-3570k-ivy-bridge-16gb.html)
