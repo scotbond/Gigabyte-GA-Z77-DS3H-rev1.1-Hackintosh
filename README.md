@@ -1,17 +1,17 @@
-# Gigabyte-GA-Z77-DS3H-rev1.1-Hackintosh
+# Gigabyte-GA-Z77-DS3H-rev1.0-Hackintosh
 
-Hackintosh for [Gigabyte GA-Z77-DS3H rev1.1](http://www.gigabyte.com/products/product-page.aspx?pid=4326) motherboard using OS X 10.10 Yosemite.  
+Hackintosh for [Gigabyte GA-Z77-DS3H rev1.0](http://www.gigabyte.com/products/product-page.aspx?pid=4147) motherboard using OS X 10.10 Yosemite.  
 This is a minimal guide that fits my hardware configuration.
 
 Intel Z77 chipset, LGA1155 socket.  
 Supports 3rd gen. Intel Core CPUs ([22 nm - Ivy Bridge](http://en.wikipedia.org/wiki/Ivy_Bridge_(microarchitecture))) and 2nd gen. Intel Core CPUs ([32 nm - Sandy Bridge](http://en.wikipedia.org/wiki/Sandy_Bridge)).
 
 Onboard devices:
-- Qualcomm Atheros AR8161 Gigabit Ethernet controller (DS3H rev1.0 has AR8151)
+- Qualcomm Atheros AR8151 Gigabit Ethernet controller
 - Realtek ALC887 audio chipset
 
 Sources:
-- [AR8161 LAN on new MoBo revisions (ga-z77-ds3h and ga-h77-ds3h, others)](http://www.tonymacx86.com/desktop-compatibility/77447-ar8161-lan-new-mobo-revisions-ga-z77-ds3h-ga-h77-ds3h-others.html)
+- ~~[AR8161 LAN on new MoBo revisions (ga-z77-ds3h and ga-h77-ds3h, others)](http://www.tonymacx86.com/desktop-compatibility/77447-ar8161-lan-new-mobo-revisions-ga-z77-ds3h-ga-h77-ds3h-others.html)~~
 
 ## BIOS Settings
 
@@ -41,7 +41,7 @@ Beside defaults, check/uncheck:
 - ~~Drivers > Disk > 3rd Party SATA~~
 - Drivers > Disk > TRIM Enabler (if you own a SSD disk)
 - ~~Drivers > Misc > USB 3.0 - Universal ([does not work](https://github.com/tkrotoff/Gigabyte-GA-Z77-DS3H-rev1.1-Hackintosh/issues/8) for me - at least not all ports)~~
-- Drivers > Network > Atheros > AtherosE2200Ethernet
+- Drivers > Network > Atheros > AtherosL1cEthernet 1.2.3
 - Customize > Boot Options > Verbose Boot (if you want to see what's going on)
 
 Sources:
